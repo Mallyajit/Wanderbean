@@ -1,0 +1,104 @@
+{
+  "city": {
+    "name": "Lisbon", "country": "Portugal", "countryCode": "PT", "currency": "EUR",
+    "lat": 38.7123, "lng": -9.1393, "tz": "Europe/Lisbon", "wiki": "Lisbon", "dinnerTime": "20:00",
+    "aliases": ["lisbon", "lisboa"],
+    "tagline": "Seven hills, tiled façades and Atlantic light at the mouth of the Tagus."
+  },
+  "transit": {
+    "walkMaxKm": 1.8,
+    "metro": {
+      "label": "Lisbon Metro", "fare": 1.85, "speed": 30, "access": 9, "radiusKm": 6,
+      "stations": [
+        ["Baixa-Chiado", 38.7106, -9.1395],
+        ["Rossio", 38.714, -9.1393],
+        ["Restauradores", 38.7155, -9.1415],
+        ["Terreiro do Paço", 38.7071, -9.1338],
+        ["Cais do Sodré", 38.7058, -9.1456],
+        ["Martim Moniz", 38.7172, -9.1357],
+        ["Intendente", 38.7222, -9.1352],
+        ["Anjos", 38.7268, -9.135],
+        ["Santa Apolónia", 38.7137, -9.1225],
+        ["Avenida", 38.72, -9.1458],
+        ["Marquês de Pombal", 38.7253, -9.15],
+        ["Parque", 38.729, -9.1503],
+        ["São Sebastião", 38.7343, -9.154],
+        ["Praça de Espanha", 38.7381, -9.1588],
+        ["Saldanha", 38.735, -9.145],
+        ["Alameda", 38.737, -9.1335],
+        ["Rato", 38.72, -9.154],
+        ["Oriente", 38.7678, -9.099]
+      ]
+    },
+    "bus": { "label": "Carris bus / tram", "fare": 1.85, "wait": 10, "factor": 1.7 },
+    "taxi": { "label": "Taxi / ride-hail", "base": 3.5, "perKm": 1.0, "speed": 18 },
+    "carDay": { "label": "Private driver (8 hrs)", "price": 280 },
+    "dayPass": { "label": "Carris/Metro 24-hour Pass", "price": 7.2, "covers": ["metro", "bus"], "detail": "Unlimited metro, bus, tram and funicular for 24 hours." }
+  },
+  "hubs": [
+    { "name": "Rossio", "lat": 38.7139, "lng": -9.1406 },
+    { "name": "Cais do Sodré", "lat": 38.7060, "lng": -9.1458 },
+    { "name": "Baixa-Chiado Metro", "lat": 38.7106, "lng": -9.1395 }
+  ],
+  "passes": [
+    { "id": "lisboa-card-24", "label": "Lisboa Card (24h)", "price": 27, "validityDays": 1, "covers": ["jeronimos", "belem-tower", "tile-museum", "santa-justa", "pantheon"], "coversTransit": true, "detail": "Free entry to Jerónimos, Belém Tower, the Tile Museum, Santa Justa Lift and the Pantheon, plus unlimited metro, bus and tram." },
+    { "id": "lisboa-card-48", "label": "Lisboa Card (48h)", "price": 44, "validityDays": 2, "covers": ["jeronimos", "belem-tower", "tile-museum", "santa-justa", "pantheon"], "coversTransit": true, "detail": "As the 24h card, valid for 48 hours." },
+    { "id": "lisboa-card-72", "label": "Lisboa Card (72h)", "price": 54, "validityDays": 3, "covers": ["jeronimos", "belem-tower", "tile-museum", "santa-justa", "pantheon"], "coversTransit": true, "detail": "As the 24h card, valid for 72 hours." }
+  ],
+  "hotels": [
+    { "id": "lost-inn", "name": "Lost Inn Lisbon Hostel", "area": "Bairro Alto", "lat": 38.7104, "lng": -9.1438, "price": 34, "tier": 1, "style": "hostel bunk", "rating": 4.6, "ratingCount": 3000, "summary": "Hostel in a Chiado townhouse with a river-view terrace.", "amenities": ["Terrace", "Bar", "Wi-Fi"] },
+    { "id": "home-hostel", "name": "Home Lisbon Hostel", "area": "Baixa", "lat": 38.7099, "lng": -9.1376, "price": 38, "tier": 1, "style": "transit-hub hostel bunk", "rating": 4.8, "ratingCount": 6000, "summary": "Family-run hostel with a home-cooked 'Mamma's dinner', steps from Baixa-Chiado metro.", "amenities": ["Family dinner", "Lockers", "Wi-Fi"] },
+    { "id": "ibis-liberdade", "name": "ibis Lisboa Liberdade", "area": "Avenida", "lat": 38.7224, "lng": -9.1478, "price": 95, "tier": 2, "style": "budget hotel", "rating": 4.0, "ratingCount": 3000, "summary": "Plain, reliable rooms just off Avenida da Liberdade.", "amenities": ["24h desk", "Breakfast", "Wi-Fi"] },
+    { "id": "lisboa-tejo", "name": "Hotel Lisboa Tejo", "area": "Baixa", "lat": 38.7128, "lng": -9.1373, "price": 120, "tier": 3, "style": "transit-hub mid-range hotel", "rating": 4.3, "ratingCount": 4000, "summary": "Azulejo-trimmed hotel a block from Rossio, with an 18th-century well in the lobby.", "amenities": ["Breakfast", "Bar", "Wi-Fi"] },
+    { "id": "my-story-rossio", "name": "My Story Hotel Rossio", "area": "Rossio", "lat": 38.7139, "lng": -9.1395, "price": 135, "tier": 3, "style": "transit-hub mid-range hotel", "rating": 4.4, "ratingCount": 5000, "summary": "Bright rooms right on Rossio square, above two metro lines.", "amenities": ["Restaurant", "Square views", "Wi-Fi"] },
+    { "id": "memmo-alfama", "name": "Memmo Alfama", "area": "Alfama", "lat": 38.7106, "lng": -9.1306, "price": 280, "tier": 4, "style": "boutique design hotel", "rating": 4.6, "ratingCount": 2500, "summary": "Whitewashed boutique hotel with a terrace pool over Alfama's rooftops.", "amenities": ["Terrace pool", "Wine bar", "Rooftop views"] },
+    { "id": "bairro-alto-hotel", "name": "Bairro Alto Hotel", "area": "Chiado", "lat": 38.7097, "lng": -9.1428, "price": 420, "tier": 5, "style": "luxury hotel", "rating": 4.6, "ratingCount": 1500, "summary": "An 18th-century palace on Praça Luís de Camões with a sunset rooftop bar.", "amenities": ["Rooftop bar", "Spa", "Restaurant"] }
+  ],
+  "attractions": [
+    { "id": "jeronimos", "name": "Jerónimos Monastery", "area": "Belém", "lat": 38.6979, "lng": -9.2068, "fee": 18, "duration": 90, "hours": ["09:30", "18:00"], "closed": [1], "early": true, "must": true, "rating": 4.7, "ratingCount": 70000, "wiki": "Jerónimos Monastery", "summary": "A Manueline masterpiece of rope-carved limestone cloisters, paid for with spice-route pepper.", "tip": "The church is free; the cloister is the ticketed part — and the reason to come.", "guide": { "label": "Licensed Belém guide", "price": 90 } },
+    { "id": "belem-tower", "name": "Belém Tower", "area": "Belém", "lat": 38.6916, "lng": -9.2160, "fee": 10, "duration": 45, "hours": ["09:30", "18:00"], "closed": [1], "rating": 4.6, "ratingCount": 120000, "wiki": "Belém Tower", "summary": "Fortified 1519 watchtower in the Tagus, where caravels once set out.", "tip": "Capacity is capped; arrive at opening or settle for the outside." },
+    { "id": "padrao", "name": "Padrão dos Descobrimentos", "area": "Belém", "lat": 38.6936, "lng": -9.2057, "fee": 10, "duration": 40, "hours": ["10:00", "19:00"], "closed": [1], "rating": 4.5, "ratingCount": 60000, "wiki": "Padrão dos Descobrimentos", "summary": "A 52-metre stone prow of navigators, with a compass-rose map set into the plaza." },
+    { "id": "sao-jorge", "name": "São Jorge Castle", "area": "Alfama", "lat": 38.7139, "lng": -9.1335, "fee": 15, "duration": 90, "hours": ["09:00", "18:00"], "early": true, "golden": true, "rating": 4.5, "ratingCount": 90000, "wiki": "São Jorge Castle", "summary": "Moorish hilltop citadel of peacocks and ramparts with the widest view over the Baixa.", "tip": "Ride tram 12 or the free Baixa elevators up; walk down through Alfama." },
+    { "id": "santa-luzia", "name": "Miradouro de Santa Luzia", "area": "Alfama", "lat": 38.7118, "lng": -9.1305, "fee": 0, "duration": 30, "hours": ["00:00", "23:59"], "golden": true, "rating": 4.7, "ratingCount": 40000, "wiki": "Miradouro de Santa Luzia", "summary": "Bougainvillea-draped terrace and azulejo panels over Alfama's terracotta roofs." },
+    { "id": "senhora-monte", "name": "Miradouro da Senhora do Monte", "area": "Graça", "lat": 38.7190, "lng": -9.1325, "fee": 0, "duration": 40, "hours": ["00:00", "23:59"], "golden": true, "rating": 4.8, "ratingCount": 25000, "wiki": "Miradouro da Senhora do Monte", "summary": "The highest viewpoint in the city — castle, river and bridge in one frame at sunset." },
+    { "id": "tile-museum", "name": "National Tile Museum", "area": "Xabregas", "lat": 38.7247, "lng": -9.1135, "fee": 8, "duration": 90, "hours": ["10:00", "18:00"], "closed": [1], "indoor": true, "rating": 4.6, "ratingCount": 20000, "wiki": "Museu Nacional do Azulejo", "summary": "Five centuries of azulejos in a convent with a gilded baroque chapel.", "tip": "Don't miss the 23-metre panorama of pre-earthquake Lisbon upstairs." },
+    { "id": "gulbenkian", "name": "Calouste Gulbenkian Museum", "area": "Avenidas Novas", "lat": 38.7372, "lng": -9.1546, "fee": 14, "duration": 120, "hours": ["10:00", "18:00"], "closed": [2], "indoor": true, "rating": 4.7, "ratingCount": 25000, "wiki": "Calouste Gulbenkian Museum", "summary": "An oil magnate's collection, from Egyptian antiquities to Lalique jewels, in a modernist garden." },
+    { "id": "maat", "name": "MAAT", "area": "Belém", "lat": 38.6957, "lng": -9.1946, "fee": 11, "duration": 75, "hours": ["10:00", "19:00"], "closed": [2], "indoor": true, "rating": 4.4, "ratingCount": 20000, "wiki": "Museum of Art, Architecture and Technology", "summary": "Wave-roofed riverside museum whose rooftop doubles as a walkable viewing deck." },
+    { "id": "lx-factory", "name": "LX Factory", "area": "Alcântara", "lat": 38.7033, "lng": -9.1789, "fee": 0, "duration": 75, "hours": ["09:00", "23:59"], "rating": 4.5, "ratingCount": 50000, "wiki": "LX Factory", "summary": "Converted textile works of bookshops, studios and cafés under the 25 de Abril bridge." },
+    { "id": "praca-comercio", "name": "Praça do Comércio", "area": "Baixa", "lat": 38.7075, "lng": -9.1364, "fee": 0, "duration": 30, "hours": ["00:00", "23:59"], "golden": true, "rating": 4.6, "ratingCount": 130000, "wiki": "Praça do Comércio", "summary": "Vast riverfront square entered through the triumphal Rua Augusta Arch." },
+    { "id": "santa-justa", "name": "Santa Justa Lift", "area": "Baixa", "lat": 38.7121, "lng": -9.1394, "fee": 6.1, "duration": 30, "hours": ["07:30", "21:00"], "rating": 4.2, "ratingCount": 60000, "wiki": "Santa Justa Lift", "summary": "Neo-Gothic iron elevator linking the Baixa to the Carmo ruins." },
+    { "id": "carmo", "name": "Carmo Convent Ruins", "area": "Chiado", "lat": 38.7120, "lng": -9.1407, "fee": 7, "duration": 45, "hours": ["10:00", "18:00"], "closed": [0], "rating": 4.6, "ratingCount": 25000, "wiki": "Carmo Convent (Lisbon)", "summary": "A roofless Gothic nave left open to the sky since the 1755 earthquake." },
+    { "id": "se-cathedral", "name": "Lisbon Cathedral (Sé)", "area": "Alfama", "lat": 38.7097, "lng": -9.1335, "fee": 5, "duration": 40, "hours": ["09:30", "18:00"], "indoor": true, "rating": 4.4, "ratingCount": 30000, "wiki": "Lisbon Cathedral", "summary": "Fortress-like Romanesque cathedral, with Roman and Moorish layers excavated in the cloister." },
+    { "id": "pantheon", "name": "National Pantheon", "area": "Alfama", "lat": 38.7149, "lng": -9.1250, "fee": 8, "duration": 45, "hours": ["10:00", "18:00"], "closed": [1], "indoor": true, "rating": 4.6, "ratingCount": 10000, "wiki": "Church of Santa Engrácia", "summary": "A baroque dome with a terrace view over the Tagus — and the tomb of Amália Rodrigues." },
+    { "id": "oceanario", "name": "Oceanário de Lisboa", "area": "Parque das Nações", "lat": 38.7636, "lng": -9.0938, "fee": 25, "duration": 150, "hours": ["10:00", "20:00"], "indoor": true, "rating": 4.7, "ratingCount": 90000, "wiki": "Lisbon Oceanarium", "summary": "A vast central tank of sharks, rays and sunfish ringed by four ocean habitats." }
+  ],
+  "eateries": [
+    { "id": "manteigaria", "name": "Manteigaria", "area": "Chiado", "lat": 38.7105, "lng": -9.1438, "cost": 4, "meals": ["breakfast", "street"], "diet": ["vegetarian"], "dish": "Pastel de nata, warm from the oven", "tier": 1, "rating": 4.7, "ratingCount": 25000, "hours": ["08:00", "23:59"], "summary": "A bell rings each time a fresh tray of natas comes out." },
+    { "id": "a-brasileira", "name": "Café A Brasileira", "area": "Chiado", "lat": 38.7107, "lng": -9.1419, "cost": 7, "meals": ["breakfast"], "diet": ["vegetarian"], "dish": "Bica & torrada at Pessoa's café", "tier": 1, "rating": 4.0, "ratingCount": 20000, "hours": ["08:00", "23:59"], "summary": "Art-nouveau café of 1905; Fernando Pessoa's bronze still has a seat outside." },
+    { "id": "pasteis-belem", "name": "Pastéis de Belém", "area": "Belém", "lat": 38.6975, "lng": -9.2032, "cost": 7, "meals": ["breakfast", "lunch"], "diet": ["vegetarian"], "dish": "The original 1837 pastel", "tier": 1, "rating": 4.6, "ratingCount": 80000, "hours": ["08:00", "23:00"], "summary": "The recipe is still a secret kept by three bakers. Sit inside — the queue is for takeaway." },
+    { "id": "o-trevo", "name": "O Trevo", "area": "Chiado", "lat": 38.7108, "lng": -9.1442, "cost": 6, "meals": ["breakfast", "lunch", "dinner", "street"], "diet": [], "dish": "Bifana — garlic pork sandwich", "tier": 1, "rating": 4.3, "ratingCount": 4000, "hours": ["07:00", "23:59"], "summary": "Stand-up counter where Lisbon eats its bifana with a cold imperial." },
+    { "id": "time-out-market", "name": "Time Out Market", "area": "Cais do Sodré", "lat": 38.7071, "lng": -9.1458, "cost": 18, "meals": ["lunch", "dinner"], "diet": ["vegetarian"], "dish": "Food hall of chef-run stalls", "tier": 2, "rating": 4.4, "ratingCount": 90000, "hours": ["10:00", "23:59"], "summary": "The Ribeira market hall, given over to the city's best-known chefs." },
+    { "id": "ze-mouraria", "name": "Zé da Mouraria", "area": "Mouraria", "lat": 38.7166, "lng": -9.1361, "cost": 18, "meals": ["lunch"], "diet": [], "dish": "Bacalhau with chickpeas — portions for two", "tier": 2, "rating": 4.5, "ratingCount": 4000, "hours": ["12:00", "16:00"], "closed": [0], "summary": "Lunch-only tasca with shared tables and enormous platters." },
+    { "id": "pateo-13", "name": "Páteo 13", "area": "Alfama", "lat": 38.7112, "lng": -9.1290, "cost": 18, "meals": ["lunch", "dinner"], "diet": [], "dish": "Charcoal-grilled sardines", "tier": 1, "rating": 4.4, "ratingCount": 2500, "hours": ["12:00", "23:00"], "summary": "A courtyard grill in Alfama's lanes, smoke drifting over plastic chairs." },
+    { "id": "taberna-flores", "name": "Taberna da Rua das Flores", "area": "Chiado", "lat": 38.7101, "lng": -9.1439, "cost": 28, "meals": ["lunch", "dinner"], "diet": [], "dish": "Petiscos from a chalkboard menu", "tier": 2, "rating": 4.5, "ratingCount": 3000, "hours": ["12:00", "23:30"], "closed": [0], "summary": "Tiny, no-reservations tavern reinventing Lisbon small plates." },
+    { "id": "ao-26", "name": "Ao 26 – Vegan Food Project", "area": "Chiado", "lat": 38.7097, "lng": -9.1414, "cost": 20, "meals": ["lunch", "dinner"], "diet": ["vegetarian", "vegan"], "dish": "Plant-based Portuguese plates", "tier": 2, "rating": 4.7, "ratingCount": 3000, "hours": ["12:00", "23:00"], "summary": "Vegan cooking with Portuguese roots, on a quiet Chiado street." },
+    { "id": "enoteca-belem", "name": "Enoteca de Belém", "area": "Belém", "lat": 38.6976, "lng": -9.2022, "cost": 32, "meals": ["lunch", "dinner"], "diet": [], "dish": "Octopus with sweet potato & Alentejo wines", "tier": 3, "rating": 4.6, "ratingCount": 2500, "hours": ["13:00", "23:00"], "summary": "Wine bar a lane back from the monastery, with a long Portuguese list." },
+    { "id": "tasca-chico", "name": "Tasca do Chico", "area": "Bairro Alto", "lat": 38.7125, "lng": -9.1446, "cost": 25, "meals": ["dinner"], "diet": [], "dish": "Chouriço assado & fado vadio", "tier": 2, "rating": 4.5, "ratingCount": 4000, "hours": ["19:00", "23:59"], "summary": "Cramped, smoky tasca where amateurs stand up to sing fado." },
+    { "id": "ramiro", "name": "Cervejaria Ramiro", "area": "Intendente", "lat": 38.7206, "lng": -9.1355, "cost": 45, "meals": ["lunch", "dinner"], "diet": [], "dish": "Garlic prawns, crab & a prego to finish", "tier": 3, "rating": 4.5, "ratingCount": 30000, "hours": ["12:00", "23:59"], "closed": [1], "summary": "Lisbon's seafood institution — take a number and wait." },
+    { "id": "belcanto", "name": "Belcanto", "area": "Chiado", "lat": 38.7098, "lng": -9.1418, "cost": 245, "meals": ["lunch", "dinner"], "diet": [], "dish": "José Avillez tasting menu", "tier": 5, "rating": 4.6, "ratingCount": 2000, "hours": ["12:30", "23:00"], "closed": [0, 1], "summary": "Two Michelin stars, a few doors from the opera house." }
+  ],
+  "markets": [
+    { "id": "feira-ladra", "name": "Feira da Ladra", "area": "Campo de Santa Clara", "lat": 38.7150, "lng": -9.1260, "allowance": 20, "hours": ["09:00", "18:00"], "closed": [0, 1, 3, 4, 5], "rating": 4.2, "ratingCount": 10000, "wiki": "Feira da Ladra", "crafts": "Azulejos, vinyl, military surplus and curios — Tuesdays & Saturdays", "summary": "The 'thieves' market', spread over the square behind the Pantheon." },
+    { "id": "a-vida-portuguesa", "name": "A Vida Portuguesa", "area": "Chiado", "lat": 38.7108, "lng": -9.1413, "allowance": 30, "hours": ["10:00", "20:00"], "rating": 4.6, "ratingCount": 5000, "crafts": "Claus Porto soap, sardine tins, Bordallo ceramics", "summary": "Heritage Portuguese brands in a former perfume warehouse." },
+    { "id": "embaixada", "name": "Embaixada", "area": "Príncipe Real", "lat": 38.7166, "lng": -9.1488, "allowance": 35, "hours": ["12:00", "20:00"], "rating": 4.5, "ratingCount": 3000, "crafts": "Portuguese designers in a neo-Moorish palace", "summary": "Concept store gallery around a palace courtyard." },
+    { "id": "conserveira", "name": "Conserveira de Lisboa", "area": "Baixa", "lat": 38.7090, "lng": -9.1350, "allowance": 15, "hours": ["10:00", "19:00"], "closed": [0], "rating": 4.6, "ratingCount": 3500, "crafts": "Vintage-wrapped tinned fish since 1930", "summary": "Paper-wrapped tins tied with string, sold over a 1930s counter." },
+    { "id": "campo-ourique", "name": "Mercado de Campo de Ourique", "area": "Campo de Ourique", "lat": 38.7174, "lng": -9.1650, "allowance": 20, "hours": ["10:00", "23:00"], "rating": 4.4, "ratingCount": 9000, "crafts": "Neighbourhood food market with petisco counters", "summary": "A locals' market hall that turns into a wine bar after dark." }
+  ],
+  "activities": [
+    { "id": "fado-alfama", "name": "Fado Dinner at Clube de Fado", "short": "Fado dinner", "area": "Alfama", "lat": 38.7104, "lng": -9.1302, "price": 55, "duration": 150, "slot": "dinner", "includesDinner": true, "start": "20:00", "hours": ["19:30", "23:59"], "value": 4, "rating": 4.5, "ratingCount": 3500, "pitch": "a fado dinner in an Alfama cellar", "summary": "Candlelit dinner and sets from Lisbon's finest fadistas in a vaulted cellar." },
+    { "id": "tile-workshop", "name": "Azulejo Painting Workshop", "short": "Tile workshop", "area": "Alfama", "lat": 38.7135, "lng": -9.1300, "price": 45, "duration": 150, "slot": "day", "hours": ["10:00", "18:00"], "value": 3.5, "rating": 4.9, "ratingCount": 1200, "pitch": "an azulejo tile-painting workshop", "summary": "Paint and glaze your own tile with a ceramicist; it's fired and ready next day." },
+    { "id": "food-walk", "name": "Private Tascas & Petiscos Food Walk", "short": "Food walk", "area": "Mouraria", "lat": 38.7140, "lng": -9.1380, "price": 95, "duration": 210, "slot": "dinner", "includesDinner": true, "start": "18:30", "hours": ["17:00", "22:30"], "value": 4.5, "addonOnly": true, "rating": 4.9, "ratingCount": 900, "pitch": "a private tascas-and-petiscos food walk", "summary": "Seven stops through Mouraria and Alfama with a local food writer." },
+    { "id": "sunset-sail", "name": "Sunset Sailing on the Tagus", "short": "Sunset sail", "area": "Doca de Alcântara", "lat": 38.7046, "lng": -9.1700, "price": 45, "duration": 120, "slot": "evening", "hours": ["16:00", "21:00"], "value": 4, "addonOnly": true, "rating": 4.8, "ratingCount": 2000, "pitch": "a sunset sail on the Tagus", "summary": "Two hours under sail past Belém and beneath the 25 de Abril bridge." },
+    { "id": "tuk-tour", "name": "Tuk-tuk Tour of the Seven Hills", "short": "Tuk-tuk tour", "area": "Baixa", "lat": 38.7110, "lng": -9.1370, "price": 70, "duration": 90, "slot": "day", "hours": ["09:00", "19:00"], "value": 2.5, "addonOnly": true, "rating": 4.8, "ratingCount": 1500, "pitch": "a tuk-tuk tour of the seven hills", "summary": "Electric tuk-tuk loop of miradouros your legs would rather skip." }
+  ]
+}

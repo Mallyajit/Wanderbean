@@ -1,0 +1,110 @@
+{
+  "city": {
+    "name": "Kyoto", "country": "Japan", "countryCode": "JP", "currency": "JPY",
+    "lat": 35.0116, "lng": 135.7681, "tz": "Asia/Tokyo", "wiki": "Kyoto", "dinnerTime": "18:30",
+    "aliases": ["kyoto"],
+    "tagline": "Seventeen UNESCO sites, a thousand temples and the quiet hour before the crowds."
+  },
+  "transit": {
+    "walkMaxKm": 2.2,
+    "metro": {
+      "label": "Subway / Keihan / JR rail", "fare": 260, "speed": 30, "access": 10, "radiusKm": 6,
+      "stations": [
+        ["Kyoto Station", 34.9858, 135.7588],
+        ["Gojo", 34.9963, 135.7594],
+        ["Shijo", 35.0036, 135.7596],
+        ["Karasuma Oike", 35.0109, 135.7596],
+        ["Marutamachi", 35.0175, 135.7595],
+        ["Imadegawa", 35.03, 135.7596],
+        ["Kitaoji", 35.0441, 135.759],
+        ["Nijojo-mae", 35.0118, 135.748],
+        ["Nishioji Oike", 35.0143, 135.732],
+        ["Uzumasa Tenjingawa", 35.0154, 135.7106],
+        ["Kyoto Shiyakusho-mae", 35.011, 135.768],
+        ["Sanjo Keihan", 35.0089, 135.772],
+        ["Higashiyama", 35.0098, 135.7795],
+        ["Keage", 35.006, 135.79],
+        ["Gion-Shijo (Keihan)", 35.0035, 135.772],
+        ["Kiyomizu-Gojo (Keihan)", 34.996, 135.769],
+        ["Shichijo (Keihan)", 34.9886, 135.769],
+        ["Fushimi-Inari (Keihan)", 34.9669, 135.77],
+        ["Inari (JR)", 34.967, 135.7697],
+        ["Saga-Arashiyama (JR)", 35.0181, 135.681],
+        ["Arashiyama (Hankyu)", 35.009, 135.681],
+        ["Umekoji-Kyotonishi (JR)", 34.988, 135.742],
+        ["Kawaramachi (Hankyu)", 35.0037, 135.769],
+        ["Demachiyanagi (Keihan)", 35.0297, 135.7726]
+      ]
+    },
+    "bus": { "label": "Kyoto City Bus (flat fare)", "fare": 230, "wait": 10, "factor": 1.8 },
+    "taxi": { "label": "Taxi", "base": 500, "perKm": 420, "speed": 18 },
+    "carDay": { "label": "Private car & driver (8 hrs)", "price": 48000 },
+    "dayPass": { "label": "Subway & Bus 1-Day Pass", "price": 1100, "covers": ["metro", "bus"], "detail": "Unlimited city buses and both subway lines for one calendar day." }
+  },
+  "hubs": [
+    { "name": "Kyoto Station", "lat": 34.9858, "lng": 135.7588 },
+    { "name": "Sanjo Keihan", "lat": 35.0089, "lng": 135.7720 },
+    { "name": "Karasuma Oike", "lat": 35.0109, "lng": 135.7596 }
+  ],
+  "passes": [],
+  "hotels": [
+    { "id": "ks-house", "name": "K's House Kyoto", "area": "Shimogyo", "lat": 34.9905, "lng": 135.7648, "price": 4200, "tier": 1, "style": "transit-hub hostel bunk", "rating": 4.5, "ratingCount": 3000, "summary": "Backpacker favourite a ten-minute walk from Kyoto Station, with a riverside terrace.", "amenities": ["Shared kitchen", "Terrace", "Bike rental"] },
+    { "id": "piece-hostel", "name": "Piece Hostel Sanjo", "area": "Nakagyo", "lat": 35.0087, "lng": 135.7676, "price": 4500, "tier": 1, "style": "hostel bunk", "rating": 4.6, "ratingCount": 2400, "summary": "Design hostel with a sunlit lounge, steps from the Kamo River and Sanjo.", "amenities": ["Lounge", "Kitchen", "Wi-Fi"] },
+    { "id": "len-kyoto", "name": "Len Kyoto Kawaramachi", "area": "Shimogyo", "lat": 34.9969, "lng": 135.7700, "price": 6800, "tier": 2, "style": "design guesthouse", "rating": 4.5, "ratingCount": 1700, "summary": "Hostel, café and bar on the Takase canal, with private rooms upstairs.", "amenities": ["Café-bar", "Private rooms", "Wi-Fi"] },
+    { "id": "gracery-sanjo", "name": "Hotel Gracery Kyoto Sanjo", "area": "Nakagyo", "lat": 35.0089, "lng": 135.7684, "price": 12500, "tier": 3, "style": "mid-range hotel", "rating": 4.2, "ratingCount": 5000, "summary": "Efficient rooms on the Sanjo arcade, between Nishiki Market and the river.", "amenities": ["24h desk", "Restaurant", "Laundry"] },
+    { "id": "sakura-terrace", "name": "Sakura Terrace The Gallery", "area": "Shimogyo", "lat": 34.9849, "lng": 135.7552, "price": 13500, "tier": 3, "style": "transit-hub design hotel", "rating": 4.5, "ratingCount": 2600, "summary": "Art-filled hotel with a rooftop terrace and a large public bath behind Kyoto Station.", "amenities": ["Public bath", "Rooftop terrace", "Gallery"] },
+    { "id": "ryokan-yachiyo", "name": "Ryokan Yachiyo", "area": "Nanzen-ji", "lat": 35.0109, "lng": 135.7905, "price": 38000, "tier": 4, "style": "traditional ryokan", "rating": 4.4, "ratingCount": 900, "summary": "Tatami rooms, garden views and a kaiseki breakfast at the gates of Nanzen-ji.", "amenities": ["Japanese garden", "Kaiseki breakfast", "Yukata"] },
+    { "id": "the-thousand", "name": "The Thousand Kyoto", "area": "Shimogyo", "lat": 34.9866, "lng": 135.7608, "price": 48000, "tier": 5, "style": "luxury hotel", "rating": 4.6, "ratingCount": 2300, "summary": "Calm, minimalist luxury directly at Kyoto Station's central exit.", "amenities": ["Spa", "Fitness", "Concierge"] }
+  ],
+  "attractions": [
+    { "id": "fushimi-inari", "name": "Fushimi Inari Taisha", "area": "Fushimi", "lat": 34.9671, "lng": 135.7727, "fee": 0, "duration": 120, "hours": ["00:00", "23:59"], "early": true, "must": true, "rating": 4.7, "ratingCount": 75000, "wiki": "Fushimi Inari-taisha", "summary": "Ten thousand vermilion torii gates tunnelling up the slopes of Mount Inari.", "tip": "Most visitors turn back at the Yotsutsuji intersection — keep climbing for empty paths." },
+    { "id": "kiyomizu-dera", "name": "Kiyomizu-dera", "area": "Higashiyama", "lat": 34.9949, "lng": 135.7850, "fee": 500, "duration": 75, "hours": ["06:00", "18:00"], "golden": true, "must": true, "rating": 4.6, "ratingCount": 60000, "wiki": "Kiyomizu-dera", "summary": "A wooden stage cantilevered over a forested hillside, with views across the whole city.", "tip": "Walk down through Sannenzaka afterwards — the slope glows at dusk." },
+    { "id": "kinkaku-ji", "name": "Kinkaku-ji", "area": "Kita", "lat": 35.0394, "lng": 135.7292, "fee": 500, "duration": 60, "hours": ["09:00", "17:00"], "early": true, "must": true, "rating": 4.6, "ratingCount": 55000, "wiki": "Kinkaku-ji", "summary": "The Golden Pavilion: a gold-leaf Zen temple mirrored in Kyōko-chi pond.", "tip": "Be at the gate at 09:00 for a reflection without a crowd in it." },
+    { "id": "ryoan-ji", "name": "Ryōan-ji", "area": "Ukyo", "lat": 35.0345, "lng": 135.7183, "fee": 600, "duration": 50, "hours": ["08:00", "17:00"], "rating": 4.4, "ratingCount": 12000, "wiki": "Ryōan-ji", "summary": "Fifteen rocks on raked gravel — Japan's most famous, most debated Zen garden.", "tip": "From any seat, one stone is always hidden. Count them." },
+    { "id": "arashiyama-bamboo", "name": "Arashiyama Bamboo Grove", "area": "Arashiyama", "lat": 35.0170, "lng": 135.6713, "fee": 0, "duration": 45, "hours": ["00:00", "23:59"], "early": true, "rating": 4.4, "ratingCount": 45000, "wiki": "Arashiyama", "summary": "Towering moso bamboo creaking overhead along a path that's only quiet at dawn.", "tip": "Before 08:00 or not at all." },
+    { "id": "tenryu-ji", "name": "Tenryū-ji", "area": "Arashiyama", "lat": 35.0157, "lng": 135.6738, "fee": 500, "duration": 60, "hours": ["08:30", "17:00"], "rating": 4.5, "ratingCount": 15000, "wiki": "Tenryū-ji", "summary": "UNESCO Zen temple with a 14th-century pond garden that borrows the Arashiyama hills.", "tip": "Exit by the north gate straight into the bamboo grove." },
+    { "id": "nijo-castle", "name": "Nijō Castle", "area": "Nakagyo", "lat": 35.0142, "lng": 135.7481, "fee": 1300, "duration": 90, "hours": ["08:45", "16:00"], "rating": 4.4, "ratingCount": 40000, "wiki": "Nijō Castle", "summary": "The shogun's palace, whose 'nightingale floors' chirp underfoot to betray intruders.", "tip": "Last entry is an hour before closing.", "guide": { "label": "Licensed castle guide", "price": 6000 } },
+    { "id": "ginkaku-ji", "name": "Ginkaku-ji", "area": "Sakyo", "lat": 35.0270, "lng": 135.7982, "fee": 500, "duration": 60, "hours": ["08:30", "17:00"], "rating": 4.5, "ratingCount": 20000, "wiki": "Ginkaku-ji", "summary": "The Silver Pavilion — never silvered — and its sculpted sand cone, Kogetsudai.", "tip": "Climb the hillside loop for the view back over the garden." },
+    { "id": "philosophers-path", "name": "Philosopher's Path", "area": "Sakyo", "lat": 35.0217, "lng": 135.7942, "fee": 0, "duration": 50, "hours": ["00:00", "23:59"], "rating": 4.4, "ratingCount": 20000, "wiki": "Philosopher's Walk", "summary": "Two kilometres of canal-side stone path between Ginkaku-ji and Nanzen-ji.", "tip": "Walk it south, downhill, ending at Nanzen-ji." },
+    { "id": "nanzen-ji", "name": "Nanzen-ji", "area": "Sakyo", "lat": 35.0110, "lng": 135.7940, "fee": 600, "duration": 60, "hours": ["08:40", "17:00"], "rating": 4.6, "ratingCount": 15000, "wiki": "Nanzen-ji", "summary": "A massive Sanmon gate and a brick Meiji aqueduct running through temple grounds.", "tip": "The aqueduct arches are free; the Sanmon balcony is worth its fee." },
+    { "id": "gion", "name": "Gion & Hanamikoji", "area": "Gion", "lat": 35.0037, "lng": 135.7751, "fee": 0, "duration": 60, "hours": ["00:00", "23:59"], "golden": true, "rating": 4.4, "ratingCount": 30000, "wiki": "Gion", "summary": "Lantern-lit lanes of wooden machiya teahouses; maiko hurry to evening engagements.", "tip": "Photographing maiko on private lanes now carries fines — keep to the main street." },
+    { "id": "yasaka-shrine", "name": "Yasaka Shrine", "area": "Gion", "lat": 35.0037, "lng": 135.7785, "fee": 0, "duration": 30, "hours": ["00:00", "23:59"], "rating": 4.4, "ratingCount": 30000, "wiki": "Yasaka Shrine", "summary": "Gion's guardian shrine, its dance stage hung with hundreds of lanterns lit at dusk." },
+    { "id": "sanjusangendo", "name": "Sanjūsangen-dō", "area": "Higashiyama", "lat": 34.9879, "lng": 135.7718, "fee": 600, "duration": 45, "hours": ["08:30", "17:00"], "indoor": true, "rating": 4.6, "ratingCount": 20000, "wiki": "Sanjūsangen-dō", "summary": "A 120-metre hall holding 1,001 gilded statues of Kannon in silent ranks." },
+    { "id": "kyoto-national-museum", "name": "Kyoto National Museum", "area": "Higashiyama", "lat": 34.9900, "lng": 135.7731, "fee": 700, "duration": 100, "hours": ["09:30", "17:00"], "closed": [1], "indoor": true, "rating": 4.3, "ratingCount": 6000, "wiki": "Kyoto National Museum", "summary": "Pre-modern Japanese art: Buddhist sculpture, scroll painting and lacquer." },
+    { "id": "railway-museum", "name": "Kyoto Railway Museum", "area": "Shimogyo", "lat": 34.9871, "lng": 135.7424, "fee": 1500, "duration": 120, "hours": ["10:00", "17:00"], "closed": [3], "indoor": true, "rating": 4.5, "ratingCount": 15000, "wiki": "Kyoto Railway Museum", "summary": "Steam locomotives in a working roundhouse, plus shinkansen cars to climb into." }
+  ],
+  "eateries": [
+    { "id": "inoda", "name": "Inoda Coffee Honten", "area": "Nakagyo", "lat": 35.0076, "lng": 135.7623, "cost": 1700, "meals": ["breakfast", "lunch"], "diet": [], "dish": "Kyoto breakfast set & 'Arabia no Shinju' coffee", "tier": 2, "rating": 4.2, "ratingCount": 4500, "hours": ["07:00", "18:00"], "summary": "Kyoto's grand old coffee house, serving breakfast since 1940." },
+    { "id": "arabica-higashiyama", "name": "% Arabica Higashiyama", "area": "Higashiyama", "lat": 34.9985, "lng": 135.7807, "cost": 700, "meals": ["breakfast"], "diet": ["vegetarian", "vegan"], "dish": "Kyoto latte on the Yasaka slope", "tier": 1, "rating": 4.3, "ratingCount": 4000, "hours": ["08:00", "18:00"], "summary": "Tiny white-tiled espresso bar on the climb to Kiyomizu-dera." },
+    { "id": "arabica-arashiyama", "name": "% Arabica Arashiyama", "area": "Arashiyama", "lat": 35.0127, "lng": 135.6772, "cost": 700, "meals": ["breakfast"], "diet": ["vegetarian", "vegan"], "dish": "Espresso on the Katsura riverbank", "tier": 1, "rating": 4.4, "ratingCount": 6000, "hours": ["08:00", "18:00"], "summary": "Riverside espresso with a view of Togetsukyo bridge." },
+    { "id": "vermillion", "name": "Vermillion Espresso Bar", "area": "Fushimi", "lat": 34.9680, "lng": 135.7713, "cost": 900, "meals": ["breakfast", "lunch"], "diet": ["vegetarian"], "dish": "Flat white & cakes before the climb", "tier": 1, "rating": 4.5, "ratingCount": 2000, "hours": ["08:30", "17:00"], "summary": "Melbourne-style café a short walk from the Inari gates." },
+    { "id": "menbaka", "name": "Menbakaichidai (Fire Ramen)", "area": "Kamigyo", "lat": 35.0217, "lng": 135.7473, "cost": 1600, "meals": ["lunch", "dinner"], "diet": [], "dish": "Negi ramen set alight at the counter", "tier": 1, "rating": 4.4, "ratingCount": 6000, "hours": ["11:00", "21:00"], "summary": "Ramen theatre: green onions doused in oil and lit in front of you." },
+    { "id": "omen", "name": "Omen Ginkaku-ji", "area": "Sakyo", "lat": 35.0262, "lng": 135.7944, "cost": 1500, "meals": ["lunch", "dinner"], "diet": [], "dish": "Omen udon with seasonal vegetables", "tier": 2, "rating": 4.3, "ratingCount": 3500, "hours": ["11:00", "21:00"], "closed": [4], "summary": "Dip-it-yourself udon in a farmhouse-style dining room near the Silver Pavilion." },
+    { "id": "sarasa-nishijin", "name": "Sarasa Nishijin", "area": "Kita", "lat": 35.0397, "lng": 135.7445, "cost": 1200, "meals": ["lunch", "dinner"], "diet": ["vegetarian"], "dish": "Lunch plates in a 1930s bathhouse", "tier": 1, "rating": 4.2, "ratingCount": 1500, "hours": ["11:30", "22:00"], "summary": "Café inside a converted sento, its walls still tiled in majolica." },
+    { "id": "yoshimura", "name": "Arashiyama Yoshimura", "area": "Arashiyama", "lat": 35.0128, "lng": 135.6776, "cost": 1800, "meals": ["lunch"], "diet": [], "dish": "Hand-cut soba with river views", "tier": 2, "rating": 4.1, "ratingCount": 3000, "hours": ["10:30", "17:00"], "summary": "Upstairs windows look straight onto Togetsukyo bridge." },
+    { "id": "shigetsu", "name": "Shigetsu (Tenryū-ji)", "area": "Arashiyama", "lat": 35.0157, "lng": 135.6745, "cost": 3800, "meals": ["lunch"], "diet": ["vegetarian", "vegan"], "dish": "Shojin ryori — Zen Buddhist vegetarian course", "tier": 3, "rating": 4.4, "ratingCount": 1500, "hours": ["11:00", "14:00"], "summary": "Temple cuisine served on tatami inside the grounds of Tenryū-ji." },
+    { "id": "musashi", "name": "Musashi Sushi Kawaramachi", "area": "Nakagyo", "lat": 35.0087, "lng": 135.7695, "cost": 1500, "meals": ["lunch", "dinner"], "diet": [], "dish": "Conveyor-belt sushi", "tier": 1, "rating": 4.0, "ratingCount": 3000, "hours": ["11:00", "22:00"], "summary": "Fast, fresh kaiten sushi at the Sanjo–Kawaramachi crossing." },
+    { "id": "chao-chao", "name": "Gyoza Chao Chao", "area": "Kiyamachi", "lat": 35.0067, "lng": 135.7709, "cost": 1500, "meals": ["lunch", "dinner"], "diet": [], "dish": "Crisp-lattice gyoza", "tier": 1, "rating": 4.4, "ratingCount": 3000, "hours": ["11:30", "23:30"], "summary": "Queue-worthy gyoza bar by the Takase canal." },
+    { "id": "ramen-koji", "name": "Kyoto Ramen Koji", "area": "Kyoto Station", "lat": 34.9852, "lng": 135.7585, "cost": 1200, "meals": ["lunch", "dinner"], "diet": [], "dish": "Ramen from nine regional shops", "tier": 1, "rating": 4.0, "ratingCount": 6000, "hours": ["11:00", "22:00"], "summary": "A floor of Kyoto Station given over to regional ramen styles." },
+    { "id": "izuju", "name": "Izuju", "area": "Gion", "lat": 35.0035, "lng": 135.7778, "cost": 2500, "meals": ["lunch", "dinner"], "diet": [], "dish": "Saba-zushi (pressed mackerel sushi)", "tier": 2, "rating": 4.3, "ratingCount": 1200, "hours": ["10:30", "19:00"], "closed": [3], "summary": "A century-old sushi house opposite Yasaka Shrine." },
+    { "id": "yudofu-sagano", "name": "Yudofu Sagano", "area": "Arashiyama", "lat": 35.0158, "lng": 135.6770, "cost": 4000, "meals": ["lunch", "dinner"], "diet": ["vegetarian"], "dish": "Yudofu — simmered tofu course", "tier": 3, "rating": 4.3, "ratingCount": 1500, "hours": ["11:00", "19:00"], "summary": "Tofu simmered at the table in a bamboo-fringed garden." },
+    { "id": "gion-karyo", "name": "Gion Karyo", "area": "Gion", "lat": 35.0019, "lng": 135.7752, "cost": 14000, "meals": ["dinner"], "diet": [], "dish": "Michelin-starred kaiseki", "tier": 4, "rating": 4.5, "ratingCount": 900, "hours": ["17:00", "22:00"], "summary": "Seasonal kaiseki in a Hanamikoji townhouse." },
+    { "id": "kikunoi", "name": "Kikunoi Honten", "area": "Higashiyama", "lat": 35.0007, "lng": 135.7813, "cost": 30000, "meals": ["dinner"], "diet": [], "dish": "Three-Michelin-star kaiseki", "tier": 5, "rating": 4.6, "ratingCount": 700, "hours": ["17:00", "21:30"], "summary": "Chef Yoshihiro Murata's benchmark of Kyoto haute cuisine." }
+  ],
+  "markets": [
+    { "id": "nishiki", "name": "Nishiki Market", "area": "Nakagyo", "lat": 35.0050, "lng": 135.7649, "allowance": 3000, "hours": ["10:00", "18:00"], "rating": 4.3, "ratingCount": 35000, "wiki": "Nishiki Market", "crafts": "Pickles, tamagoyaki, yuba and Aritsugu knives", "summary": "'Kyoto's kitchen': five blocks of food stalls under a stained-glass roof." },
+    { "id": "teramachi", "name": "Teramachi & Shinkyogoku Arcades", "area": "Nakagyo", "lat": 35.0065, "lng": 135.7680, "allowance": 2500, "hours": ["10:00", "21:00"], "rating": 4.2, "ratingCount": 12000, "crafts": "Washi paper, incense, vintage kimono, tenugui", "summary": "Covered shopping streets mixing temples, stationers and second-hand kimono." },
+    { "id": "sannenzaka", "name": "Sannenzaka & Ninenzaka", "area": "Higashiyama", "lat": 34.9963, "lng": 135.7811, "allowance": 2500, "hours": ["09:00", "18:00"], "rating": 4.5, "ratingCount": 25000, "crafts": "Kiyomizu-yaki pottery, folding fans, yatsuhashi sweets", "summary": "Stone-stepped slopes of preserved merchant houses below Kiyomizu-dera." },
+    { "id": "handicraft-center", "name": "Kyoto Handicraft Center", "area": "Sakyo", "lat": 35.0175, "lng": 135.7788, "allowance": 3000, "hours": ["10:00", "19:00"], "rating": 4.1, "ratingCount": 3000, "crafts": "Cloisonné, ceramics, woodblock prints", "summary": "Seven floors of crafts with tax-free counters." },
+    { "id": "toji-flea", "name": "Tō-ji Flea Market (Kōbō-san)", "area": "Minami", "lat": 34.9806, "lng": 135.7478, "allowance": 3000, "hours": ["05:00", "16:00"], "monthdays": [21], "rating": 4.4, "ratingCount": 4000, "wiki": "Tō-ji", "crafts": "Antique kimono, ceramics, tools — 21st of each month", "summary": "A thousand stalls around a five-storey pagoda, one day a month." },
+    { "id": "kitano-flea", "name": "Kitano Tenmangū Market (Tenjin-san)", "area": "Kamigyo", "lat": 35.0311, "lng": 135.7351, "allowance": 3000, "hours": ["06:00", "16:00"], "monthdays": [25], "rating": 4.3, "ratingCount": 2500, "crafts": "Antiques and street food — 25th of each month", "summary": "Shrine-grounds flea market held on the 25th." }
+  ],
+  "activities": [
+    { "id": "tea-ceremony", "name": "Tea Ceremony Camellia", "short": "Tea ceremony", "area": "Higashiyama", "lat": 34.9980, "lng": 135.7807, "price": 4000, "duration": 60, "slot": "day", "hours": ["10:00", "17:00"], "value": 4, "rating": 4.9, "ratingCount": 3000, "pitch": "a tea ceremony in a Ninenzaka machiya", "summary": "An unhurried matcha ceremony in a century-old townhouse, explained in English." },
+    { "id": "gion-corner", "name": "Gion Corner", "short": "Gion Corner", "area": "Gion", "lat": 35.0010, "lng": 135.7748, "price": 3300, "duration": 60, "slot": "evening", "start": "19:00", "hours": ["18:00", "20:30"], "value": 3, "rating": 4.0, "ratingCount": 2500, "pitch": "an evening of kyo-mai dance at Gion Corner", "summary": "Seven traditional arts in an hour: kyo-mai dance, koto and bunraku puppetry." },
+    { "id": "pontocho-food-tour", "name": "Evening Pontocho & Gion Food Tour", "short": "Food tour", "area": "Pontocho", "lat": 35.0050, "lng": 135.7710, "price": 14000, "duration": 180, "slot": "dinner", "includesDinner": true, "start": "18:00", "hours": ["17:00", "22:00"], "value": 4.5, "addonOnly": true, "rating": 4.9, "ratingCount": 800, "pitch": "a guided Pontocho izakaya food crawl", "summary": "Four izakaya, ten small plates and sake pairings along lantern-lit Pontocho." },
+    { "id": "kimono-rental", "name": "Kimono Rental (full day)", "short": "Kimono day", "area": "Higashiyama", "lat": 34.9965, "lng": 135.7800, "price": 4500, "duration": 30, "slot": "morning", "hours": ["09:00", "18:00"], "value": 2.5, "addonOnly": true, "rating": 4.6, "ratingCount": 2000, "pitch": "a full-day kimono rental with dressing", "summary": "Choose a seasonal kimono and obi, dressed and styled by professionals." },
+    { "id": "private-guide", "name": "Private Licensed Guide (full day)", "short": "Private guide", "area": "Kyoto", "lat": 35.0116, "lng": 135.7681, "price": 30000, "duration": 480, "slot": "morning", "hours": ["08:00", "18:00"], "value": 3.5, "addonOnly": true, "rating": 4.9, "ratingCount": 400, "pitch": "a full-day private licensed guide", "summary": "A National Government Licensed Guide who knows which side gates are open." },
+    { "id": "sake-tasting", "name": "Gekkeikan Okura Sake Museum", "short": "Sake tasting", "area": "Fushimi", "lat": 34.9325, "lng": 135.7612, "price": 600, "duration": 60, "slot": "day", "hours": ["09:30", "16:30"], "value": 2.5, "addonOnly": true, "rating": 4.2, "ratingCount": 4000, "pitch": "a Fushimi sake-brewery tasting", "summary": "Brewery museum in the Fushimi sake district, with a tasting to finish." }
+  ]
+}

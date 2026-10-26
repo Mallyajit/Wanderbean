@@ -1,0 +1,99 @@
+{
+  "city": {
+    "name": "Jaipur", "country": "India", "countryCode": "IN", "currency": "INR",
+    "lat": 26.9124, "lng": 75.8073, "tz": "Asia/Kolkata", "wiki": "Jaipur", "dinnerTime": "19:45",
+    "aliases": ["jaipur", "pink city"],
+    "tagline": "Pink sandstone, mirrored palaces and bazaars that trade until late."
+  },
+  "transit": {
+    "walkMaxKm": 2.0,
+    "metro": {
+      "label": "Jaipur Metro (Pink Line)", "fare": 20, "speed": 32, "access": 12, "radiusKm": 4,
+      "stations": [
+        ["Mansarovar", 26.8797, 75.7514],
+        ["New Aatish Market", 26.8829, 75.7599],
+        ["Vivek Vihar", 26.8868, 75.768],
+        ["Shyam Nagar", 26.8934, 75.7738],
+        ["Ram Nagar", 26.9, 75.7774],
+        ["Civil Lines", 26.908, 75.7838],
+        ["Railway Station", 26.9187, 75.7896],
+        ["Sindhi Camp", 26.9234, 75.7999],
+        ["Chandpole", 26.9257, 75.8133],
+        ["Chhoti Chaupar", 26.9248, 75.8203],
+        ["Badi Chaupar", 26.924, 75.8273]
+      ]
+    },
+    "bus": { "label": "JCTSL city bus", "fare": 15, "wait": 12, "factor": 1.7 },
+    "shared": { "label": "Shared e-rickshaw", "fare": 20, "speed": 14, "maxKm": 5 },
+    "taxi": { "label": "Auto-rickshaw", "base": 40, "perKm": 18, "speed": 20 },
+    "carDay": { "label": "Private car & driver (8 hrs)", "price": 2200 },
+    "dayPass": null
+  },
+  "hubs": [
+    { "name": "Jaipur Junction", "lat": 26.9196, "lng": 75.7880 },
+    { "name": "Sindhi Camp Bus Stand", "lat": 26.9230, "lng": 75.8000 },
+    { "name": "Badi Chaupar Metro", "lat": 26.9238, "lng": 75.8274 }
+  ],
+  "passes": [
+    {
+      "id": "jaipur-composite", "label": "Composite Monument Ticket", "price": 300, "validityDays": 2,
+      "covers": ["amber-fort", "hawa-mahal", "jantar-mantar", "albert-hall", "nahargarh-fort", "isarlat"],
+      "coversTransit": false,
+      "detail": "One ticket for Amber, Hawa Mahal, Jantar Mantar, Albert Hall, Nahargarh and Isarlat, valid two days (Indian-national rate)."
+    }
+  ],
+  "hotels": [
+    { "id": "zostel-jaipur", "name": "Zostel Jaipur", "area": "Hathroi Fort", "lat": 26.9140, "lng": 75.7965, "price": 750, "tier": 1, "style": "hostel bunk", "rating": 4.4, "ratingCount": 3500, "summary": "Social hostel in a converted haveli with a rooftop café; dorm beds and a few private rooms.", "amenities": ["Rooftop café", "Lockers", "Wi-Fi"] },
+    { "id": "pearl-palace", "name": "Hotel Pearl Palace", "area": "Hathroi Fort", "lat": 26.9149, "lng": 75.7973, "price": 2200, "tier": 2, "style": "transit-hub budget guesthouse", "rating": 4.6, "ratingCount": 4800, "summary": "Family-run guesthouse known for hand-painted rooms and its carved-peacock rooftop restaurant.", "amenities": ["Rooftop restaurant", "Travel desk", "Wi-Fi"] },
+    { "id": "arya-niwas", "name": "Hotel Arya Niwas", "area": "Sansar Chandra Road", "lat": 26.9195, "lng": 75.8003, "price": 2800, "tier": 2, "style": "transit-hub budget guesthouse", "rating": 4.3, "ratingCount": 5200, "summary": "Quiet garden-courtyard hotel a ten-minute walk from Sindhi Camp bus stand and the railway station.", "amenities": ["Garden terrace", "Vegetarian kitchen", "Wi-Fi"] },
+    { "id": "umaid-bhawan", "name": "Umaid Bhawan Heritage House", "area": "Bani Park", "lat": 26.9286, "lng": 75.7930, "price": 3400, "tier": 3, "style": "heritage haveli hotel", "rating": 4.4, "ratingCount": 3000, "summary": "Rajput-style heritage house with mirrored suites and a rooftop pool, close to the station.", "amenities": ["Rooftop pool", "Restaurant", "Station pick-up"] },
+    { "id": "alsisar-haveli", "name": "Alsisar Haveli", "area": "Sansar Chandra Road", "lat": 26.9190, "lng": 75.8045, "price": 7200, "tier": 4, "style": "boutique heritage stay", "rating": 4.4, "ratingCount": 3200, "summary": "A 19th-century haveli of courtyards, frescoes and a pool, minutes from the old-city walls.", "amenities": ["Pool", "Courtyard dining", "Heritage rooms"] },
+    { "id": "shahpura-house", "name": "Shahpura House", "area": "Bani Park", "lat": 26.9305, "lng": 75.7921, "price": 8500, "tier": 4, "style": "boutique heritage stay", "rating": 4.5, "ratingCount": 3500, "summary": "Painted ceilings, a rooftop restaurant with Nahargarh views and a calm Bani Park setting.", "amenities": ["Pool", "Rooftop restaurant", "Spa"] },
+    { "id": "samode-haveli", "name": "Samode Haveli", "area": "Gangapole", "lat": 26.9353, "lng": 75.8303, "price": 16000, "tier": 5, "style": "luxury palace hotel", "rating": 4.6, "ratingCount": 2400, "summary": "A 250-year-old haveli with a fabled painted dining hall, on the walled city's northern edge.", "amenities": ["Pool", "Spa", "Painted dining hall"] }
+  ],
+  "attractions": [
+    { "id": "amber-fort", "name": "Amber Fort", "area": "Amer", "lat": 26.9855, "lng": 75.8513, "fee": 100, "duration": 150, "hours": ["08:00", "17:30"], "early": true, "must": true, "rating": 4.6, "ratingCount": 98000, "wiki": "Amber Fort", "summary": "Hilltop palace of mirrored halls and pale sandstone ramparts above Maota Lake.", "tip": "Walk up from Suraj Pol rather than queueing for jeeps; the Sheesh Mahal is the payoff.", "guide": { "label": "Licensed fort guide", "price": 600 } },
+    { "id": "hawa-mahal", "name": "Hawa Mahal", "area": "Badi Chaupar", "lat": 26.9239, "lng": 75.8267, "fee": 50, "duration": 45, "hours": ["09:00", "17:00"], "early": true, "must": true, "rating": 4.4, "ratingCount": 120000, "wiki": "Hawa Mahal", "summary": "Honeycomb façade of 953 latticed windows, built so royal women could watch street life unseen.", "tip": "The best photograph is from the first-floor cafés across the road, not from inside." },
+    { "id": "city-palace", "name": "City Palace", "area": "Old City", "lat": 26.9258, "lng": 75.8237, "fee": 300, "duration": 110, "hours": ["09:30", "17:00"], "rating": 4.4, "ratingCount": 60000, "wiki": "City Palace, Jaipur", "summary": "Working royal residence: Mubarak Mahal textiles, the Peacock Gate and Diwan-i-Khas's silver urns.", "tip": "Look up in Pritam Niwas Chowk — each of the four gates is a season.", "guide": { "label": "Licensed palace guide", "price": 500 } },
+    { "id": "jantar-mantar", "name": "Jantar Mantar", "area": "Old City", "lat": 26.9248, "lng": 75.8246, "fee": 50, "duration": 55, "hours": ["09:00", "16:30"], "rating": 4.5, "ratingCount": 45000, "wiki": "Jantar Mantar, Jaipur", "summary": "UNESCO-listed field of masonry astronomical instruments, including the world's largest stone sundial.", "tip": "Hire the audio guide — without it the instruments are beautiful but baffling." },
+    { "id": "albert-hall", "name": "Albert Hall Museum", "area": "Ram Niwas Garden", "lat": 26.9116, "lng": 75.8195, "fee": 40, "duration": 75, "hours": ["09:00", "17:00"], "indoor": true, "rating": 4.5, "ratingCount": 50000, "wiki": "Albert Hall Museum", "summary": "Indo-Saracenic museum of Rajasthani miniatures, armour and an Egyptian mummy.", "tip": "Come back after dark: the façade is floodlit and Masala Chowk is next door." },
+    { "id": "nahargarh-fort", "name": "Nahargarh Fort", "area": "Aravalli Ridge", "lat": 26.9373, "lng": 75.8155, "fee": 50, "duration": 90, "hours": ["10:00", "22:00"], "golden": true, "rating": 4.4, "ratingCount": 40000, "wiki": "Nahargarh Fort", "summary": "Ridge-top fort with the finest sunset over the Pink City's grid of rooftops.", "tip": "Stake out the Padao terrace 45 minutes before sunset." },
+    { "id": "jaigarh-fort", "name": "Jaigarh Fort", "area": "Amer", "lat": 26.9851, "lng": 75.8456, "fee": 100, "duration": 75, "hours": ["09:00", "16:30"], "rating": 4.4, "ratingCount": 30000, "wiki": "Jaigarh Fort", "summary": "Military fort guarding Amber, home to Jaivana — once the world's largest cannon on wheels.", "tip": "The ramparts give the best top-down view of Amber Fort." },
+    { "id": "jal-mahal", "name": "Jal Mahal", "area": "Man Sagar Lake", "lat": 26.9535, "lng": 75.8463, "fee": 0, "duration": 30, "hours": ["06:00", "21:00"], "golden": true, "rating": 4.3, "ratingCount": 70000, "wiki": "Jal Mahal", "summary": "A five-storey palace adrift in Man Sagar Lake, seen from the promenade.", "tip": "Golden hour turns the lake to copper; skip the boat touts." },
+    { "id": "panna-meena", "name": "Panna Meena ka Kund", "area": "Amer", "lat": 26.9866, "lng": 75.8551, "fee": 0, "duration": 30, "hours": ["07:00", "18:00"], "rating": 4.5, "ratingCount": 15000, "wiki": "Panna Meena ka Kund", "summary": "A geometric stepwell of criss-crossing staircases below Amber.", "tip": "Stairs are roped off; photograph from the rim." },
+    { "id": "birla-mandir", "name": "Birla Mandir", "area": "Tilak Nagar", "lat": 26.8921, "lng": 75.8155, "fee": 0, "duration": 40, "hours": ["08:00", "20:30"], "rating": 4.6, "ratingCount": 40000, "wiki": "Birla Mandir, Jaipur", "summary": "White-marble Lakshmi Narayan temple that glows under floodlights at dusk.", "tip": "Shoes off at the gate; photography inside is not allowed." },
+    { "id": "patrika-gate", "name": "Patrika Gate", "area": "Jawahar Circle", "lat": 26.8418, "lng": 75.8020, "fee": 0, "duration": 30, "hours": ["07:00", "21:00"], "rating": 4.5, "ratingCount": 30000, "wiki": "Patrika Gate", "summary": "A riot of hand-painted Rajasthani murals — the most photographed gateway in the city.", "tip": "Before 9am the colonnade is empty." },
+    { "id": "isarlat", "name": "Isarlat (Swargasuli)", "area": "Tripolia Bazaar", "lat": 26.9235, "lng": 75.8205, "fee": 50, "duration": 30, "hours": ["09:00", "16:30"], "rating": 4.3, "ratingCount": 4000, "wiki": "Isarlat", "summary": "Seven-tiered minaret with a corkscrew ramp and a 360° view over the bazaars.", "tip": "The entrance is down a lane behind the Tripolia shops — ask for Swargasuli." },
+    { "id": "galta-ji", "name": "Galta Ji (Monkey Temple)", "area": "Galta", "lat": 26.9167, "lng": 75.8584, "fee": 0, "duration": 75, "hours": ["05:00", "21:00"], "golden": true, "rating": 4.4, "ratingCount": 30000, "wiki": "Galtaji", "summary": "Pink-sandstone temples in a rocky gorge with spring-fed kunds — and resident macaques.", "tip": "Keep food out of sight; the monkeys are bold." },
+    { "id": "anokhi-museum", "name": "Anokhi Museum of Hand Printing", "area": "Amer", "lat": 26.9874, "lng": 75.8539, "fee": 80, "duration": 60, "hours": ["10:30", "16:45"], "closed": [1], "indoor": true, "rating": 4.5, "ratingCount": 2500, "wiki": "Anokhi Museum of Hand Printing", "summary": "A restored haveli devoted to block printing, with live carving and printing demonstrations.", "tip": "Closed Mondays." }
+  ],
+  "eateries": [
+    { "id": "rawat", "name": "Rawat Mishtan Bhandar", "area": "Station Road", "lat": 26.9188, "lng": 75.7970, "cost": 120, "meals": ["breakfast", "lunch"], "diet": ["vegetarian"], "dish": "Pyaaz kachori & mawa kachori", "tier": 1, "rating": 4.3, "ratingCount": 38000, "hours": ["06:00", "22:30"], "summary": "The city's benchmark pyaaz kachori, fried in batches from dawn." },
+    { "id": "lassiwala", "name": "Lassiwala", "area": "MI Road", "lat": 26.9157, "lng": 75.8047, "cost": 90, "meals": ["breakfast", "street"], "diet": ["vegetarian"], "dish": "Kulhad lassi", "tier": 1, "rating": 4.1, "ratingCount": 12000, "hours": ["07:30", "17:00"], "summary": "Thick lassi in clay cups; the original stall sells out by mid-afternoon." },
+    { "id": "peacock-rooftop", "name": "Peacock Rooftop Restaurant", "area": "Hathroi Fort", "lat": 26.9149, "lng": 75.7973, "cost": 600, "meals": ["breakfast", "dinner"], "diet": [], "dish": "Tandoori platters & rooftop views", "tier": 2, "rating": 4.4, "ratingCount": 9000, "hours": ["07:00", "23:00"], "summary": "Whimsical carved-peacock rooftop above Hotel Pearl Palace." },
+    { "id": "tapri", "name": "Tapri Central", "area": "C-Scheme", "lat": 26.9067, "lng": 75.8063, "cost": 380, "meals": ["breakfast", "lunch", "dinner"], "diet": ["vegetarian"], "dish": "Masala chai & bun maska", "tier": 2, "rating": 4.4, "ratingCount": 25000, "hours": ["07:30", "23:00"], "summary": "Rooftop chai house over Central Park with an all-day vegetarian menu." },
+    { "id": "lmb", "name": "Laxmi Misthan Bhandar (LMB)", "area": "Johari Bazaar", "lat": 26.9206, "lng": 75.8256, "cost": 550, "meals": ["breakfast", "lunch", "dinner"], "diet": ["vegetarian"], "dish": "Rajasthani thali & ghewar", "tier": 2, "rating": 4.1, "ratingCount": 25000, "hours": ["08:00", "23:00"], "summary": "Since 1954: silver-plated thalis and ghewar in the heart of Johari Bazaar." },
+    { "id": "natraj", "name": "Natraj Restaurant", "area": "MI Road", "lat": 26.9152, "lng": 75.8051, "cost": 450, "meals": ["breakfast", "lunch", "dinner"], "diet": ["vegetarian"], "dish": "Unlimited Rajasthani thali", "tier": 2, "rating": 4.2, "ratingCount": 13000, "hours": ["08:00", "23:00"], "summary": "Old-school MI Road dining room serving unlimited thalis." },
+    { "id": "masala-chowk", "name": "Masala Chowk", "area": "Ram Niwas Garden", "lat": 26.9104, "lng": 75.8188, "cost": 280, "meals": ["street", "lunch", "dinner"], "diet": ["vegetarian"], "dish": "Chaat, dal-bati & kulfi from 21 stalls", "tier": 1, "rating": 4.2, "ratingCount": 30000, "hours": ["10:00", "23:00"], "summary": "Open-air food court gathering the old city's legendary street-food stalls." },
+    { "id": "handi", "name": "Handi Restaurant", "area": "MI Road", "lat": 26.9162, "lng": 75.8075, "cost": 750, "meals": ["lunch", "dinner"], "diet": ["halal"], "dish": "Laal maas & tandoor kebabs", "tier": 2, "rating": 4.2, "ratingCount": 18000, "hours": ["12:00", "23:00"], "summary": "Courtyard grill house famous for fiery laal maas." },
+    { "id": "anokhi-cafe", "name": "Anokhi Café", "area": "C-Scheme", "lat": 26.9014, "lng": 75.8044, "cost": 650, "meals": ["breakfast", "lunch"], "diet": ["vegetarian", "vegan"], "dish": "Sourdough, salads & cold coffee", "tier": 3, "rating": 4.4, "ratingCount": 3500, "hours": ["10:00", "19:30"], "summary": "Calm café above the Anokhi flagship — organic salads and the best bread basket in town." },
+    { "id": "amer-dhabas", "name": "Amer Town Dhabas", "area": "Amer", "lat": 26.9876, "lng": 75.8566, "cost": 180, "meals": ["lunch", "street"], "diet": ["vegetarian"], "dish": "Dal-bati-churma & kadhi", "tier": 1, "rating": 4.0, "ratingCount": 1500, "hours": ["09:00", "20:00"], "summary": "Simple family kitchens in Amer town below the fort's Suraj Pol." },
+    { "id": "1135-ad", "name": "1135 AD", "area": "Amer", "lat": 26.9858, "lng": 75.8510, "cost": 2600, "meals": ["lunch", "dinner"], "diet": [], "dish": "Royal Rajput thali", "tier": 4, "rating": 4.3, "ratingCount": 5000, "hours": ["12:00", "23:00"], "summary": "Dining inside Amber Fort's Jaleb Chowk, under chandeliers and mirrored arches." },
+    { "id": "suvarna-mahal", "name": "Suvarna Mahal", "area": "Rambagh Palace", "lat": 26.8977, "lng": 75.8085, "cost": 4800, "meals": ["dinner"], "diet": [], "dish": "Rajasthani & Mughlai tasting menu", "tier": 5, "rating": 4.6, "ratingCount": 1800, "hours": ["19:00", "23:00"], "summary": "The gilded former ballroom of Rambagh Palace — Jaipur's grandest dinner." }
+  ],
+  "markets": [
+    { "id": "johari-bazaar", "name": "Johari Bazaar", "area": "Old City", "lat": 26.9213, "lng": 75.8268, "allowance": 1000, "hours": ["11:00", "21:00"], "rating": 4.3, "ratingCount": 15000, "crafts": "Gemstones, kundan jewellery, bandhani & leheriya textiles", "summary": "The jewellers' bazaar: gem cutters upstairs, sari shops and sweet-sellers below." },
+    { "id": "bapu-bazaar", "name": "Bapu Bazaar", "area": "Old City (south)", "lat": 26.9170, "lng": 75.8183, "allowance": 800, "hours": ["11:00", "21:30"], "rating": 4.2, "ratingCount": 22000, "crafts": "Mojari slippers, block-printed cotton, camel-leather bags", "summary": "Pink-arcaded lane of juttis, quilts and printed fabric — bargain hard." },
+    { "id": "tripolia-bazaar", "name": "Tripolia Bazaar", "area": "Old City", "lat": 26.9246, "lng": 75.8210, "allowance": 600, "hours": ["11:00", "20:30"], "closed": [0], "rating": 4.1, "ratingCount": 6000, "crafts": "Lac bangles, brass & ironware", "summary": "Manihar lane where lac bangles are heated and pressed while you wait." },
+    { "id": "nehru-bazaar", "name": "Nehru Bazaar", "area": "Old City (south-west)", "lat": 26.9183, "lng": 75.8160, "allowance": 700, "hours": ["11:00", "21:00"], "rating": 4.1, "ratingCount": 8000, "crafts": "Textiles, perfumes & leheriya dupattas", "summary": "Fabric and attar shops stacked along the old city wall." }
+  ],
+  "activities": [
+    { "id": "chokhi-dhani", "name": "Chokhi Dhani Village Evening", "short": "Chokhi Dhani", "area": "Tonk Road", "lat": 26.7672, "lng": 75.8360, "price": 1100, "duration": 180, "slot": "dinner", "includesDinner": true, "start": "18:30", "hours": ["17:00", "23:00"], "value": 3.5, "rating": 4.3, "ratingCount": 70000, "pitch": "a Chokhi Dhani village evening with folk dance and a thali dinner", "summary": "Recreated Rajasthani village: folk dance, puppetry and an unlimited thali dinner." },
+    { "id": "raj-mandir", "name": "Raj Mandir Cinema", "short": "Raj Mandir", "area": "MI Road", "lat": 26.9166, "lng": 75.8094, "price": 300, "duration": 165, "slot": "evening", "start": "21:00", "addonOnly": true, "hours": ["12:00", "23:59"], "value": 3, "rating": 4.5, "ratingCount": 35000, "wiki": "Raj Mandir Cinema", "pitch": "a Bollywood night at the Raj Mandir", "summary": "Meringue-pink 1976 movie palace — watch a Bollywood blockbuster with a roaring crowd." },
+    { "id": "old-city-food-walk", "name": "Private Old-City Food Walk", "short": "Food walk", "area": "Old City", "lat": 26.9230, "lng": 75.8240, "price": 2200, "duration": 180, "slot": "dinner", "includesDinner": true, "start": "18:30", "hours": ["17:00", "22:00"], "value": 4.5, "addonOnly": true, "rating": 4.9, "ratingCount": 600, "pitch": "a private guided old-city food walk", "summary": "Three hours, eleven tastings — kachori, kulfi, dal-bati and the lanes between, with a local food writer." },
+    { "id": "block-print-workshop", "name": "Sanganer Block-Printing Workshop", "short": "Block-print workshop", "area": "Sanganer", "lat": 26.8170, "lng": 75.7934, "price": 1500, "duration": 150, "slot": "day", "hours": ["10:00", "17:00"], "value": 3.5, "addonOnly": true, "rating": 4.8, "ratingCount": 400, "pitch": "a hands-on Sanganer block-printing workshop", "summary": "Carve and print your own cotton scarf with a Sanganeri printing family." },
+    { "id": "cooking-class", "name": "Rajasthani Home Cooking Class", "short": "Cooking class", "area": "Bani Park", "lat": 26.9300, "lng": 75.8000, "price": 1800, "duration": 150, "slot": "day", "hours": ["10:00", "18:00"], "value": 3.5, "addonOnly": true, "rating": 4.9, "ratingCount": 900, "pitch": "a Rajasthani home cooking class", "summary": "Cook dal, gatte ki sabzi and rotis in a family kitchen, then eat what you made." },
+    { "id": "heritage-walk", "name": "Dawn Heritage Walk", "short": "Dawn heritage walk", "area": "Old City", "lat": 26.9238, "lng": 75.8274, "price": 1200, "duration": 150, "slot": "morning", "hours": ["06:30", "11:00"], "value": 3, "addonOnly": true, "rating": 4.8, "ratingCount": 700, "pitch": "a dawn heritage walk through the craft lanes", "summary": "Walk the walled city's craft lanes as the bazaars wake up." },
+    { "id": "balloon", "name": "Hot-Air Balloon over Amber", "short": "Sunrise balloon", "area": "Amer", "lat": 26.9800, "lng": 75.8500, "price": 13500, "duration": 180, "slot": "morning", "hours": ["06:00", "10:00"], "value": 4, "addonOnly": true, "rating": 4.7, "ratingCount": 500, "pitch": "a sunrise hot-air balloon flight over Amber", "summary": "Sunrise flight over Amber Fort, the Aravallis and village fields; hotel pick-up included." }
+  ]
+}
